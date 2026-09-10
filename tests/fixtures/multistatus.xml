@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<d:multistatus xmlns:d="DAV:">
+  <d:response>
+    <d:href>/webdav/Groups/</d:href>
+    <d:propstat>
+      <d:prop>
+        <d:displayname>Groups</d:displayname>
+        <d:resourcetype><d:collection/></d:resourcetype>
+        <d:getlastmodified>Mon, 08 Jun 2026 10:00:00 GMT</d:getlastmodified>
+      </d:prop>
+      <d:status>HTTP/1.1 200 OK</d:status>
+    </d:propstat>
+  </d:response>
+  <d:response>
+    <d:href>/webdav/Groups/Klasse%2010a/</d:href>
+    <d:propstat>
+      <d:prop>
+        <d:displayname>Klasse 10a</d:displayname>
+        <d:resourcetype><d:collection/></d:resourcetype>
+        <d:getlastmodified>Tue, 09 Jun 2026 08:30:00 GMT</d:getlastmodified>
+      </d:prop>
+      <d:status>HTTP/1.1 200 OK</d:status>
+    </d:propstat>
+  </d:response>
+  <d:response>
+    <d:href>/webdav/Groups/Klasse%2010a/Mathe/blatt.pdf</d:href>
+    <d:propstat>
+      <d:prop>
+        <d:displayname>blatt.pdf</d:displayname>
+        <d:resourcetype/>
+        <d:getcontentlength>34567</d:getcontentlength>
+        <d:getcontenttype>application/pdf</d:getcontenttype>
+        <d:getetag>"abc123"</d:getetag>
+        <d:getlastmodified>Wed, 10 Jun 2026 12:15:00 GMT</d:getlastmodified>
+      </d:prop>
+      <d:status>HTTP/1.1 200 OK</d:status>
+    </d:propstat>
+  </d:response>
+</d:multistatus>
