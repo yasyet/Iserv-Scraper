@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iserv-scraper"
+version = "1.0.0"
+description = "Reverse-engineered IServ client: mail, files (own + group), tasks, calendar, notifications"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31",
+    "python-dotenv>=1.0",
+    "beautifulsoup4>=4.12",
+]
+
+[project.optional-dependencies]
+mcp = ["mcp[cli]>=1.2"]
+fast = ["lxml>=5.0"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+iserv = "iserv_scraper.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
